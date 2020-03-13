@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rki-Fb-lny">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect View Controller-->
+        <scene sceneID="gvn-go-MDy">
+            <objects>
+                <viewController id="Rki-Fb-lny" customClass="ConnectViewController" customModule="kakao_subject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qdJ-iW-krJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWa-XD-Hmf">
+                                <rect key="frame" x="87" y="101" width="238" height="115"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baseline_shutter_speed_white_48pt_1x" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-xX-OPv">
+                                        <rect key="frame" x="46" y="-4" width="146" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-Kr-qcd">
+                                <rect key="frame" x="164" y="760" width="87" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBt-Xz-oOZ">
+                                        <rect key="frame" x="20" y="16" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="acquireLocation:" destination="Rki-Fb-lny" eventType="touchUpInside" id="zZD-Oc-gXH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1hs-Kr-qcd" firstAttribute="top" secondItem="SWa-XD-Hmf" secondAttribute="bottom" constant="544" id="0PU-Hw-fIl"/>
+                            <constraint firstItem="8YA-EZ-M7e" firstAttribute="bottom" secondItem="1hs-Kr-qcd" secondAttribute="bottom" constant="39" id="4Zk-O2-Hdk"/>
+                            <constraint firstItem="1hs-Kr-qcd" firstAttribute="leading" secondItem="8YA-EZ-M7e" secondAttribute="leading" constant="164" id="Dzy-dB-QOH"/>
+                            <constraint firstItem="8YA-EZ-M7e" firstAttribute="trailing" secondItem="1hs-Kr-qcd" secondAttribute="trailing" constant="163" id="KCW-Js-4Ti"/>
+                            <constraint firstItem="SWa-XD-Hmf" firstAttribute="leading" secondItem="8YA-EZ-M7e" secondAttribute="leading" constant="87" id="byU-Ry-7KU"/>
+                            <constraint firstItem="8YA-EZ-M7e" firstAttribute="trailing" secondItem="SWa-XD-Hmf" secondAttribute="trailing" constant="89" id="feF-hD-J51"/>
+                            <constraint firstItem="SWa-XD-Hmf" firstAttribute="top" secondItem="8YA-EZ-M7e" secondAttribute="top" constant="57" id="gyC-S5-zvx"/>
+                            <constraint firstAttribute="bottom" secondItem="SWa-XD-Hmf" secondAttribute="bottom" constant="680" id="zB5-PC-5bQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8YA-EZ-M7e"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationAutorityV" destination="1hs-Kr-qcd" id="t3R-Lj-sWB"/>
+                        <outlet property="outlineAppMarkV" destination="SWa-XD-Hmf" id="9aZ-em-XLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2j-Oi-fLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255.07246376811597" y="-132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseline_shutter_speed_white_48pt_1x" width="144" height="144"/>
+    </resources>
+</document>
